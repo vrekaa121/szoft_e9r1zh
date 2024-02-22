@@ -18,11 +18,12 @@ namespace Pascal
                     Button b = new Button();
                     Controls.Add(b);
                     b.Top = sor * m;
-                    b.Left = oszlop * m;
+                    b.Left = oszlop * m + Width / 2;
                     b.Width = m;
                     b.Height = m;
                     int x = Faktoriális(sor) / (Faktoriális(oszlop) * Faktoriális(sor - oszlop));
                     b.Text = x.ToString();
+
 
 
                 }
