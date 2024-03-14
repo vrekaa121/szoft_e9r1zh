@@ -7,9 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fibonacci", "Fibonacci\Fibo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pascal", "Pascal\Pascal.csproj", "{F51C9935-BD65-4BCF-834A-0FF1AE1A4AA3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VillogoGomb", "VillogoGomb\VillogoGomb.csproj", "{80798A27-D211-478F-942D-D104DDA88E9B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VillogoGomb", "VillogoGomb\VillogoGomb.csproj", "{80798A27-D211-478F-942D-D104DDA88E9B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VeletlenGomb", "VeletlenGomb\VeletlenGomb.csproj", "{7584396C-1C09-4E3C-AC89-FAA146101F43}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VeletlenGomb", "VeletlenGomb\VeletlenGomb.csproj", "{7584396C-1C09-4E3C-AC89-FAA146101F43}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HajósTeszt", "HajósTeszt\HajósTeszt.csproj", "{03FCEAA5-DDE1-4BA4-8D23-713968F9817F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{7584396C-1C09-4E3C-AC89-FAA146101F43}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7584396C-1C09-4E3C-AC89-FAA146101F43}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7584396C-1C09-4E3C-AC89-FAA146101F43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03FCEAA5-DDE1-4BA4-8D23-713968F9817F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03FCEAA5-DDE1-4BA4-8D23-713968F9817F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03FCEAA5-DDE1-4BA4-8D23-713968F9817F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03FCEAA5-DDE1-4BA4-8D23-713968F9817F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
