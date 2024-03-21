@@ -8,6 +8,7 @@ namespace KigyosJatek
         int irány_y = 0;
         int lépésszám;
         int hossz = 10;
+        List<KígyóElem> kígyó = new List<KígyóElem>();
         public Form1()
         {
             InitializeComponent();
@@ -25,28 +26,33 @@ namespace KigyosJatek
             fej_x += irány_x * KígyóElem.Méret;
             fej_y += irány_y * KígyóElem.Méret;
 
-            foreach (KígyóElem item in Controls)
+            foreach (object item in Controls)
             {
-                if (item.Top == fej_y && item.Left == fej_x)
+                if (item is KígyóElem)
                 {
-                    timer1.Enabled = false;
-                    return;
+                    KígyóElem k = (KígyóElem)item;
+
+                    if (k.Top == fej_y && k.Left == fej_x)
+                    {
+                        timer1.Enabled = false;
+                        return;
+                    }
                 }
             }
-
-            List<KígyóElem> kígyó = new List<KígyóElem>();
 
             KígyóElem ke = new KígyóElem();
             ke.Top = fej_y;
             ke.Left = fej_x;
+            kígyó.Add(ke);
             Controls.Add(ke);
 
-            kígyó.Add(ke);
+            
 
-            if (Controls.Count > hossz)
+            if (kígyó.Count > hossz)
             {
                 KígyóElem levágandó = kígyó[0];
-                Controls.RemoveAt(0);
+                kígyó.RemoveAt(0);
+                Controls.Remove(levágandó);
             }
 
             if (lépésszám % 2 == 0) ke.BackColor = Color.Yellow;
