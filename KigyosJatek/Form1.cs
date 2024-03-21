@@ -7,6 +7,7 @@ namespace KigyosJatek
         int irány_x = 1;
         int irány_y = 0;
         int lépésszám;
+        int hossz = 10;
         public Form1()
         {
             InitializeComponent();
@@ -33,10 +34,22 @@ namespace KigyosJatek
                 }
             }
 
+            List<KígyóElem> kígyó = new List<KígyóElem>();
+
             KígyóElem ke = new KígyóElem();
             ke.Top = fej_y;
             ke.Left = fej_x;
             Controls.Add(ke);
+
+            kígyó.Add(ke);
+
+            if (Controls.Count > hossz)
+            {
+                KígyóElem levágandó = kígyó[0];
+                Controls.RemoveAt(0);
+            }
+
+            if (lépésszám % 2 == 0) ke.BackColor = Color.Yellow;
         }
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
