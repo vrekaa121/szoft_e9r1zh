@@ -38,6 +38,7 @@
             isActiveDataGridViewCheckBoxColumn = new DataGridViewCheckBoxColumn();
             studentBindingSource = new BindingSource(components);
             buttonMentes = new Button();
+            textBox1 = new TextBox();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)studentBindingSource).BeginInit();
             SuspendLayout();
@@ -105,11 +106,20 @@
             buttonMentes.UseVisualStyleBackColor = true;
             buttonMentes.Click += buttonMentes_Click;
             // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(27, 70);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(241, 23);
+            textBox1.TabIndex = 2;
+            textBox1.TextChanged += textBox1_TextChanged;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(745, 437);
+            Controls.Add(textBox1);
             Controls.Add(buttonMentes);
             Controls.Add(dataGridView1);
             Name = "Form1";
@@ -118,6 +128,7 @@
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ((System.ComponentModel.ISupportInitialize)studentBindingSource).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -131,5 +142,6 @@
         private DataGridViewCheckBoxColumn isActiveDataGridViewCheckBoxColumn;
         private BindingSource studentBindingSource;
         private Button buttonMentes;
+        private TextBox textBox1;
     }
 }
