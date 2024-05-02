@@ -65,6 +65,8 @@ namespace Csillagtérkép
                 g.DrawLine(toll, x1, y1, x2, y2);
             }
 
+            //hf: ki kell dobni azokat a vonalakat, amik kilógnak a körből
+
         }
     }
 }
