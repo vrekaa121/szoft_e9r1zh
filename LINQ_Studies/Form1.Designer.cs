@@ -55,17 +55,17 @@
             // 
             // panel1
             // 
-            panel1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            panel1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             panel1.Location = new Point(155, 63);
             panel1.Name = "panel1";
-            panel1.Size = new Size(582, 437);
+            panel1.Size = new Size(573, 421);
             panel1.TabIndex = 2;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(749, 512);
+            ClientSize = new Size(781, 496);
             Controls.Add(panel1);
             Controls.Add(button2);
             Controls.Add(button1);
